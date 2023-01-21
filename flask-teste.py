@@ -6,6 +6,8 @@ from flask import request
 import os
 
 app = Flask(__name__)
+# api disponivel em  http://www.omdbapi.com/apikey.aspx
+# setada com secreta
 api = os.environ['api_key']
 
 

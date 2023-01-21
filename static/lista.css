@@ -1,0 +1,47 @@
+html{
+background-color:#000;
+}
+.corpo{
+width:1800px;
+margin: auto;
+}
+.conteudo{
+display:table;
+}
+.imagem{
+display:table-cell;
+float: left;
+margin-top:20px;
+}
+.texto{
+display:table-cell;
+float: left;
+width:500px;
+color:#fff;
+margin-top:20px;
+margin-left:20px;
+}
+.pesquisa{
+display:table-cell;
+float: left;
+width:700px;
+margin-top:20px;
+margin-left:40px;
+display:inline-block;
+}
+.pesquisa form [type="submit"]{
+width: 200px;
+height: 105px;
+position:relative;
+background:#fff;
+font-size:40px;
+margin-top:20px;
+}
+.pesquisa form [type="text"]{
+width: 400px;
+height: 98px;
+position:relative;
+background:#fff;
+font-size:40px;
+color:black;
+}

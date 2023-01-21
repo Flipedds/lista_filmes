@@ -3,7 +3,10 @@ import requests
 from flask import Flask
 from flask import render_template
 from flask import request
+import os
+
 app = Flask(__name__)
+api = os.environ['api_key']
 
 
 @app.route('/')
@@ -15,7 +18,7 @@ def pagina():
 def pesquisar():
     filme = request.form.get('texto')
     try:
-        req = requests.get(f'http://www.omdbapi.com/?t={filme}&apikey=9b11133e')
+        req = requests.get(f'http://www.omdbapi.com/?t={filme}&apikey={api}')
     except:
         return render_template('pagina.html')
 
